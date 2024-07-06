@@ -2,79 +2,41 @@
 import Container from "./Container.astro";
 ---
 
-<div class="relative" id="home">
+<div id="home">
   <div
     aria-hidden="true"
-    class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+    class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-60 dark:opacity-20"
   >
     <div
-      class="blur-[106px] h-56 bg-gradient-to-br from-primary to-teal-200 dark:from-blue-700"
+      class="blur-[106px] h-80 bg-gradient-to-br from-primary to-teal-200 dark:from-blue-700"
     >
     </div>
     <div
-      class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"
+      class="blur-[106px] h-48 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"
     >
     </div>
   </div>
   <Container>
-    <div class="relative pt-24 md:pt-36 pl-12 md:pl-36">
-      <div class="flex flex-col md:flex-row">
-        <div class="w-full w-96">
+    <div class="relative pt-12 md:pt-24">
+      <div class="flex w-full flex-col md:flex-row gap-8">
+        <div class="pt-24 basis-1/3">
           <h2
-            class="text-gray-900 dark:text-white font-bold text-3xl md:text-4xl xl:text-5xl"
+            class="text-gray-900 dark:text-white font-bold text-4xl md:text-5xl xl:text-6xl"
           >
-            <span class="text-primary dark:text-white">Owllen</span>, your free
-            offline English dictionary.
+            Your Free English Dictionary
           </h2>
-          <p class="pt-6 text-gray-700 dark:text-gray-300">
+          <p class="pt-6 text-gray-700 text-xl dark:text-gray-300">
             Unlock <span class="text-primary dark:text-white"
               >the power of English</span
             >, anywhere, anytime, in any language.
           </p>
         </div>
-        <div class="relative pt-24 md:pt-0 pl-0 md:pl-36">TEST</div>
-      </div>
-      <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-        <a
-          href="#"
-          class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-        >
-          <span class="relative text-base font-semibold text-white"
-            >Download from Playstore</span
-          >
-        </a>
-        <a
-          href="#"
-          class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
-        >
-          <span
-            class="relative text-base font-semibold text-primary dark:text-white"
-            >Download from AppStore</span
-          >
-        </a>
-      </div>
-      <div
-        class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between"
-      >
-        <div class="text-left">
-          <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
-            Offline dictionary
-          </h6>
-          <p class="mt-2 text-gray-500">Use it anytime, anywhere</p>
-        </div>
-        <div class="text-left">
-          <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
-            Search by camera
-          </h6>
-          <p class="mt-2 text-gray-500">Get English word without typing</p>
-        </div>
-        <div class="text-left">
-          <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
-            Powed by Translation
-          </h6>
-          <p class="mt-2 text-gray-500">
-            Search and see definition in your own language
-          </p>
+        <div class="basis-2/3">
+          <img
+            class="h-auto max-w-full size-9/12"
+            src="./images/web_demo.png"
+            alt="image description"
+          />
         </div>
       </div>
     </div>

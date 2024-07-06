@@ -1,0 +1,23 @@
+---
+// Usage: <FeatureComponent title="Howdy" text="Partner" />
+const { title, text, icon, icon_alt_text } = Astro.props;
+---
+
+<div
+    class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+>
+    <div class="relative space-y-8 py-12 p-8">
+        <img class="w-12" src={icon} alt={icon_alt_text} />
+
+        <div class="space-y-2">
+            <h5
+                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
+            >
+                {title}
+            </h5>
+            <p class="text-gray-600 dark:text-gray-300">
+                {text}
+            </p>
+        </div>
+    </div>
+</div>
